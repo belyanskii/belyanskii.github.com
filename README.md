@@ -1,4 +1,4 @@
-yandex_shri
+Portfolio for Yandex SHRI
 ===========
 
-Yandex SHRI
+This repo contains my portfolio for test task at Yandex SHRI.
