@@ -66,12 +66,6 @@ a:hover{
 
 /* Page styles */
 
-a[target="_blank"]:after{
-    position: absolute;
-    margin-left: 5px;
-    content: '↗';
-}
-
 .page{
     width: 980px;
     margin: 0 auto;
