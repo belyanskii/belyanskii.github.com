@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+@import url(reset.css);
+
+/* Global styles */
+
+body{
+    color: #DDD;
+    background: url('../img/nami.png') repeat left top;
+}
+
+a{color: #DDD;}
+
+a:hover{
+    text-decoration: none;
+    color: #9CBC54;
+    border-radius: 4px;
+}
+
+/* Page styles */
+
+.page{
+    width: 980px;
+    margin: 0 auto;
+    max-width: 90%;
+    position: relative;
+}
+
+.bio{
+    padding: 20px 0 40px 0;
+}
+
+.page_title{
+    font: 2.5em/100% 'Lobster', cursive;
+}
+
+.bio_list{
+    font: 15px Arial, "MS Trebuchet", sans-serif;
+}
+
+.page h2{
+    font-weight: bold;
+    margin: 25px 0 5px 0;
+}
+
+.bio_list li{
+    position: relative;
+    margin: 5px 0 0 20px;
+    word-wrap: break-word;
+}
+
+.bio_list li:first-child{
+    margin-top: 0;
+}
+
+.bio_list li:before{
+    right: 4px;
+    bottom: 2px;
+    content: "\2014";
+    position: relative;
+}
+
+.low{
+    color: #F4CE38;
+}
+
+.middle{
+    color: #9CBC54;
+}
+
+.good{
+    color: #B55AA2;
+}
+
+.go_blog{
+    text-decoration: none;
+    font: 19px 'Lobster', cursive;
+    box-shadow: 1px 1px 1px #000;
+}
