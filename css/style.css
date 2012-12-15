@@ -119,8 +119,31 @@ a:hover{
     color: #B55AA2;
 }
 
-.go_blog{
-    text-decoration: none;
-    font: 19px 'Lobster', cursive;
-    box-shadow: 1px 1px 1px #000;
+
+.b-years-slider{
+    height: 7px;
+    display: block;
+    text-align: left;
+    position: relative;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    height: 15px;
+    width: 15px;
+    background: #000;
+}
+
+.ui-state-focus{
+    outline: none;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -2px;
+    margin-left: -1px;
+}
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    cursor: default;
 }
