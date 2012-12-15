@@ -124,6 +124,7 @@ a:hover{
     height: 7px;
     display: block;
     text-align: left;
+    background: #fff;
     position: relative;
 }
 
