@@ -52,5 +52,7 @@ table {
 /* Global styles */
 
 .b-page{
+    color: #3C220C;
+    background: #E4DCBF;
     font: 12px Georgia, "Century Schoolbook L", Serif;
 }
