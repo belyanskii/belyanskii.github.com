@@ -6,4 +6,9 @@
     color: #3C220C;
     background: #E4DCBF;
     font: 12px Georgia, "Century Schoolbook L", Serif;
-}
+    }
+
+    .b-content{
+        width: 960px;
+        margin: 0 auto;
+        }
