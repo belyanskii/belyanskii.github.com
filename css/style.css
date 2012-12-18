@@ -5,10 +5,34 @@
 .b-page{
     color: #3C220C;
     background: #E4DCBF;
-    font: 12px Georgia, "Century Schoolbook L", Serif;
+    font: 12px/18px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
     }
 
     .b-content{
         width: 960px;
         margin: 0 auto;
         }
+
+
+        .b-tabs{
+            padding: 0;
+            text-align: center;
+            background: #3C220C;
+            border: 1px solid #3C220C;
+            }
+
+            .b-tabs__item{
+                display: inline-block;
+                }
+
+                .b-tabs__link{
+                    color: #E4DCBF;
+                    display: block;
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    }
+
+                .b-tabs__link:hover{
+                    color: #3C220C;
+                    background: #E4DCBF;
+                    }
