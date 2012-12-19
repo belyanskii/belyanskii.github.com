@@ -3,9 +3,9 @@
 /* Global styles */
 
 .b-page{
-    color: #3C220C;
-    background: #E4DCBF;
-    font: 12px/18px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+    color: #333;
+    background: #fff;
+    font: 13px/17px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
     }
 
     .b-content{
@@ -13,12 +13,16 @@
         margin: 0 auto;
         }
 
+        .b-main_title{
+            color: #000;
+            font-size: 23px;
+            font-weight: normal;
+        }
 
         .b-tabs{
             padding: 0;
             text-align: center;
-            background: #3C220C;
-            border: 1px solid #3C220C;
+            background: #1D2124;
             }
 
             .b-tabs__item{
@@ -26,13 +30,12 @@
                 }
 
                 .b-tabs__link{
-                    color: #E4DCBF;
+                    color: #fff;
                     display: block;
-                    padding: 5px 10px;
-                    text-decoration: none;
+                    padding: 8px 10px;
                     }
 
                 .b-tabs__link:hover{
-                    color: #3C220C;
-                    background: #E4DCBF;
+                    color: red;
+                    text-decoration: none;
                     }
