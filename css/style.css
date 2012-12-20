@@ -69,6 +69,7 @@
                     }
 
             .b-text__item{
+                display: none;
                 }
 
             .b-text__item_state_current{
