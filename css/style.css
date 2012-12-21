@@ -76,7 +76,7 @@
                 display: block;
                 }
 
-            .b-anchor:hover{
+            .b-anchor:hover, .b-anchor:focus{
                 color: #333;
                 }
 
