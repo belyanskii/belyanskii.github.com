@@ -85,17 +85,18 @@
                     }
 
 .b-mushroom{
-    width: 32px;
-    height: 32px;
     margin-left: 20px;
     display: inline-block;
     vertical-align: middle;
     }
 
     .b-mushroom__original{
-
+        width: 32px;
+        height: 32px;
         }
 
     .b-mushroom__generated{
-        font-size: 2px;
+        width: 1em;
+        height: 1em;
+        font-size: 1px;
         }
