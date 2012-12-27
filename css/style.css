@@ -87,16 +87,17 @@
 .b-mushroom{
     margin-left: 20px;
     display: inline-block;
-    vertical-align: middle;
     }
 
     .b-mushroom__original{
         width: 32px;
         height: 32px;
+        vertical-align: middle;
         }
 
     .b-mushroom__generated{
         width: 1em;
         height: 1em;
         font-size: 1px;
+        vertical-align: top;
         }
