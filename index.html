@@ -4,13 +4,50 @@
     <meta charset="utf-8">
     <title>Портфолио - Белянский Александр</title>
     <link rel="stylesheet" href="css/style.css">
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('img').click(function () {
+                if (!this.canvas) {
+                    this.canvas = $('<canvas/>').css({width:this.width + 'px', height:this.height + 'px'})[0];
+                    this.canvas.getContext('2d').drawImage(this, 0, 0, this.width, this.height);
+                }
+
+                var width = this.width,
+                        height = this.height,
+                        pixelData = this.canvas.getContext('2d').getImageData(0, 0, width, height).data,
+                        ColorArr = [];
+
+                for (var i= 0, x = 1, y = 0;i<pixelData.length;i+=4,x+=1){
+                    if(x%(width+1) == 0){
+                        y += 1;
+                    }
+                    if(x == width+1){
+                        x = 1;
+                    }
+                    if(y == height+1){
+                        y = 1;
+                    }
+                    var alpha = pixelData[i+3]/255;
+                    var rgbaColor = x+'em '+y+'em rgba('+pixelData[i+0]+','+pixelData[i+1]+','+pixelData[i+2]+','+alpha.toFixed(3)+')';
+
+                    ColorArr.push(rgbaColor);
+
+                }
+                console.log(ColorArr.join());
+                $('.b-mushroom__generated').css('box-shadow', ColorArr.join());
+            });
+        });
+    </script>
 </head>
 <body class="b-page">
 <div class="b-content">
-    <h1 class="b-title">Белянский Александр Сергеевич<i class="b-mushroom"></i></h1>
+    <h1 class="b-title">Белянский Александр Сергеевич<img class="b-mushroom b-mushroom__original" src="img/mushroom.png" alt="Mushroom ^_^"><i class="b-mushroom b-mushroom__generated"></i></h1>
     <ul class="b-tabs">
         <li class="b-tabs__item"><a class="b-tabs__link" href="#info">Общая информация</a></li
         ><li class="b-tabs__item"><a class="b-tabs__link" href="#experience">Опыт разработки</a></li
